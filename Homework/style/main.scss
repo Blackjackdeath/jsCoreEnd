@@ -1,0 +1,179 @@
+@import 'base/base';
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.panel{
+    width: 80%;
+    height: 42vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &Timer{
+        width: 100%;
+        height: 25vh;
+        padding-top: 2%;
+        &__H{
+            text-align: center;
+            font-family: fantasy;
+            line-height: 150px;
+            font-size: 150px;
+        }
+    }
+    &Box{
+        width: 50%;
+        height: 5vh;
+        display: flex;
+        justify-content: space-around;
+        &__button{
+            border: none;
+            background-color: rgb(240, 101, 101);
+            color: white;
+            border-radius: 7px;
+        }
+    }
+}
+.field{
+    @extend .panel;
+    display: flex;
+    justify-content: space-around ;   
+    flex-direction: row;
+    &Box{
+        width: 300px;
+        height: 300px;
+        box-shadow: 0 0 10px 0 black;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        position: relative;
+        
+    }
+}
+.active{
+    background-color: red;
+    &:hover{
+        background-color: rgb(223, 20, 20);  
+    }
+}
+.puzzle{
+    width: 75px;
+    height: 75px;
+    border: none;
+    box-sizing: border-box;
+}
+.puzzleCatch{
+    @extend .puzzle;
+}
+.piece1{
+    width: 75px;
+    height: 75px;
+   background-image: url('../image/total-war-warhammer-iii_hxqa-min.jpg');
+}
+.piece2{
+    @extend .piece1;
+    background-position: -75px 0;
+}
+.piece3{
+    @extend .piece1;
+    background-position: -150px 0;
+}
+.piece4{
+    @extend .piece1;
+    background-position: -225px 0;
+}
+.piece5{
+    @extend .piece1;
+    background-position: 0 -75px;
+}
+.piece6{
+    @extend .piece1;
+    background-position: -75px -75px;
+}
+.piece7{
+    @extend .piece1;
+    background-position: -150px -75px;
+}
+.piece8{
+    @extend .piece1;
+    background-position: -225px -75px;
+}
+.piece9{
+    @extend .piece1;
+    background-position: 0px -150px;
+}
+.piece10{
+    @extend .piece1;
+    background-position: -75px -150px;
+}
+.piece11{
+    @extend .piece1;
+    background-position: -150px -150px;
+}
+.piece12{
+    @extend .piece1;
+    background-position: -225px -150px;
+}
+.piece13{
+    @extend .piece1;
+    background-position: 0px -225px;
+}
+.piece14{
+    @extend .piece1;
+    background-position: -75px -225px;
+}
+.piece15{
+    @extend .piece1;
+    background-position: -150px -225px;
+}
+.piece16{
+    @extend .piece1;
+    background-position: -225px -225px;
+}
+.modalWindow{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(211, 211, 211, 0.5);
+    display: none;
+}
+.lose{
+    position: relative;
+    width: 40%;
+    height: 17%;
+    background-color: white;
+    border-radius: 5px;
+    left: 30%;
+    top: 10%;
+    display: none;
+    padding-top: 30px;
+    &Text{
+        text-align: center;
+        font-family: fantasy;
+        font-size: 30px;
+        margin: 15px 0;
+    }
+    &__Button{
+        width: 60px;
+        height: 30px;
+        margin-left: 43%;
+    }
+}
+.checkResult{
+    @extend .lose;
+    &Text{
+       @extend .loseText;
+    }
+    &__ButtonCheck{
+        @extend .lose__Button;
+        background-color: green;
+        margin: 0;
+        &:hover{
+            background-color: lime;
+        }
+    }
+    &__ButtonClose{
+        @extend .lose__Button;
+        margin-left: 36%;
+    }
+}

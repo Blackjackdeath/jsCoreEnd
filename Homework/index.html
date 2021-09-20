@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/main.css">
+</head>
+
+<body>
+    <div class="panel">
+        <div class="panelTimer">
+            <h2 class="panelTimer__H">01:00</h2>
+        </div>
+        <div class="panelBox">
+            <button class="panelBox__button  active" type="button">Start game!</button>
+            <button class="panelBox__button" type="button" disabled>Check result</button>
+            <button class="panelBox__button  active" type="button">New game</button>
+        </div>
+    </div>
+    <div class="field">
+        <div class="left fieldBox">
+        </div>
+        <div class="right fieldBox">
+        </div>
+    </div>
+    <div class="modalWindow">
+        <div class="checkResult">
+            <hr>
+            <p class="checkResultText"></p>
+            <hr>
+            <button class="panelBox__button  active  lose__Button checkResult__ButtonClose" type="button">close</button>
+            <button class="panelBox__button  active checkResult__ButtonCheck" type="button">Check</button>
+        </div>
+        <div class="lose">
+            <hr>
+            <p class="loseText">It's a pity, but you lose</p>
+            <hr>
+            <button class="panelBox__button  active lose__Button" type="button">close</button>
+        </div>
+    </div>
+    <script src="./script/jquery-3.5.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="./script/script.js"></script>
+</body>
+
+</html>

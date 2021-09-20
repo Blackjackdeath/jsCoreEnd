@@ -1,0 +1,194 @@
+/* #parent{
+    width: 500px;
+    height: 500px;
+    border: 1px solid #000;
+}
+
+#child{
+    width: 200px;
+    height: 200px;
+    background-color: lightsalmon;
+}
+
+#move{
+    height: 40px;
+    background-color: lightseagreen;
+}
+
+.drop{
+    width: 500px;
+    height: 500px;
+    background-color: lightpink;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.drag{
+    width: 150px;
+    height: 150px;
+    background-color: indianred;
+    border-radius: 50%;
+    position: absolute;
+    top: 300px;
+    left: 700px;
+    border: 2px solid #000;
+}
+
+.active{
+    background-color: lightgray;
+    box-shadow: 0 0 20px 0 black;
+    border-radius: 20px;
+}
+
+.hover{
+    background-color: lawngreen;
+}
+
+.drop-message{
+    font-size: 40px;
+}
+
+.sort-container{
+    width: 70%;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    margin: 50px auto;
+    border: 1px solid #000;
+}
+
+.sort{
+    border: 1px solid #000;
+    padding: 10px;
+    width: 200px;
+    list-style-type: none;
+}
+
+.sort li{
+    height: 30px;
+    text-align: center;
+    margin: 10px 0;
+    line-height: 30px;
+    font-size: 20px;
+}
+
+.sort-left li {
+    background-color: lightsalmon;
+}
+
+.sort-right li {
+    background-color: lightseagreen;
+} */
+
+/* body{
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    width: 70%;
+    height: 70%;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.number-box{
+    width: 300px;
+    height: 300px;
+    background-color: gray;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.number{
+    width: 100px;
+    height: 100px;
+    border: 1px solid #000;
+    background-color: lightgray;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+} */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.first-block{
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://www.komar.de/ru/media/catalog/product/cache/7/image/9df78eab33525d08d6e5fb8d27136e95/s/h/sh041-vd4_into_the_jungle_web.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.first-message{
+    width: 50%;
+    height: 50%;
+    border: 15px double white;
+    color: white;
+    font-size: 60px;
+    text-transform: uppercase;
+    font-family: monospace;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 1px 1px black;
+    position: relative;
+}
+
+.second-block{
+    width: 100%;
+    height: 100vh;
+    background-color: lightgray;
+    position: relative;
+}
+
+.second-message{
+    width: 40%;
+    height: 50%;
+    border: 15px double white;
+    color: white;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px black;
+    position: absolute;
+    top: -50px;
+    left: 10%;
+    z-index: 2;
+}
+
+.second-image{
+    width: 70%;
+    height: 60%;
+    background-image: url('https://www.webintravel.com/wp-content/uploads/2020/03/Jungle.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    z-index: 1;
+}
